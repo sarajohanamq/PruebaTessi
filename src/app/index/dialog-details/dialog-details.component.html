@@ -1,0 +1,30 @@
+<div class="div_general" >
+    <div class="columns">
+        <p>Nombre:  {{data.name}}</p>
+
+        <br>
+        <p>Correo:  {{data.email}}</p>
+
+        <br>
+        <p>telefono: {{data.phone}}</p>
+
+    </div>
+    <div class="columns">
+        <p>Direccion: {{data.addres}}</p>
+
+        <br>
+        <p>Posicion: {{data.position}}</p>
+
+        <br>
+        <p>Salario: {{data.salary}}</p>
+
+    </div>
+
+
+</div>
+<div class="banner">SKILLS</div>
+
+<div class="wrapper">
+  <div *ngFor="let item of data.skills" class="skill">{{item}}</div>
+
+</div>

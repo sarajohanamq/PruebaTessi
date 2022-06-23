@@ -1,0 +1,45 @@
+
+<div  class="sectiondata">
+
+  <mat-form-field class="filtro" floatLabel="never">
+    <mat-label>Filtro</mat-label>
+    <input matInput type="search" email [(ngModel)]="searchKey" placeholder="Buscar factura" (keyup)="applyFilter()"/>
+
+  </mat-form-field>
+  <mat-table mat-table [dataSource]="dataSource"  class="mat-elevation-z8 table">
+
+
+    <ng-container  matColumnDef="name">
+      <mat-header-cell *matHeaderCellDef >name</mat-header-cell>
+      <mat-cell *matCellDef="let element" data-label="name"> {{element.name}}</mat-cell>
+    </ng-container>
+
+
+    <ng-container matColumnDef="email">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> email </mat-header-cell>
+      <mat-cell *matCellDef="let element" data-label="email"> {{element.email}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="position">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> position </mat-header-cell>
+      <mat-cell *matCellDef="let element" data-label="position"> {{element.position}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="salary">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> salary </mat-header-cell>
+      <mat-cell *matCellDef="let element" data-label="salary"> {{element.salary}}</mat-cell>
+    </ng-container>
+
+    <ng-container   matColumnDef="ver">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Ver</mat-header-cell>
+      <mat-cell *matCellDef="let element" data-label="ver">
+        <button mat-button class="ver" (click)="edit(element)">
+            Ver
+        </button>
+      </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+
+</div>

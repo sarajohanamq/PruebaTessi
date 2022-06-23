@@ -1,0 +1,50 @@
+.div_general{
+  display: flex;
+  flex-flow: row;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.columns{
+  width: 40%;
+  text-align: justify;
+  margin-left: 10%;
+}
+::ng-deep mat-dialog-container{
+  background-color: #a26b6b !important;
+}
+.dato{
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 15px;
+}
+.wrapper {
+  color: white;
+  margin-top: 50px;
+  margin-left: 10%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.skill{
+  padding: 10px;
+  width: 50%;
+  color: white;
+  background-color: #323232;
+  text-align: center;
+  height: 20px;
+  border-radius: 20px;
+}
+.banner{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  text-align: center;
+  color: white;
+  background-color: #323232;
+}
+

@@ -1,0 +1,33 @@
+.sectiondata{
+  background-color: #323232;
+  height: 100vh;
+  margin-top: 0;
+}
+.ver{
+  width: 50%;
+  height: 30px;
+  background-color: #a26b6b ;
+  border: none;
+  border-radius: 5px;
+  color:white;
+}
+.filtro{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+color:white;
+background-color:#a26b6b ;
+}
+.table{
+ width: 80%;
+ margin-left: 10%;
+ margin-top: 5px;
+}
+.ver:hover{
+  cursor: pointer;
+  background-color: #323232;
+
+}
